@@ -26,3 +26,19 @@ def calcPolinomio(x):
 calcPolinomio(1.1)
 calcPolinomio(5)
 calcPolinomio(3/2)
+
+import cmath ### Utilizado para numero complexos
+
+def declive(x1, y1, x2, y2):
+    """Calcula as raízes de um polinómio de segundo grau"""
+    if x1 != x2:
+        return (y2 - y1) / (x2 - x1)
+    else:
+        return float('Inf')
+
+def poli_2(a, b, c):
+    """Calcula as raízes de uma polinómio de segundo grau"""
+    delta = cmath.sqrt(b**2 - 4 * a * c)
+    raiz_1 = (-b + delta) / (2 * a)
+    raiz_2 = (-b - delta) / (2 * a)
+    return  raiz_1, raiz_2
