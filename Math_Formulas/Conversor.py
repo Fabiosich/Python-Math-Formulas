@@ -42,3 +42,37 @@ def poli_2(a, b, c):
     raiz_1 = (-b + delta) / (2 * a)
     raiz_2 = (-b - delta) / (2 * a)
     return  raiz_1, raiz_2
+
+def AreaTriangulo(a, b, c):
+    """Calcula da area de uma triangulo utilizando a formula de Heron"""
+    s = (a + b + c)/ 2
+    area = math.sqrt(s * (s -a) * (s - b) * (s - c))
+    return print(area)
+
+AreaTriangulo(2,2,3)
+
+
+def cumpEscada(alt, ang):
+    """Supondo que quero colocar uma escada esncostada á parede, calculamos o comprimento da escada"""
+    rad = math.pi/180 * ang
+    comp = alt /math.sin(rad)
+    return print(comp, 'metros de comprimento.')
+cumpEscada(3,45)
+
+def ValorMedBatCardiaco(idade):
+    """Calcula a media de batimento cardiacos por idades"""
+    batMed = 163+1.16* idade -0.018 * idade**2
+    return print(batMed, 'bpm.')
+ValorMedBatCardiaco(60)
+
+
+def poupança(v, t, a):
+    """Tendo um valor inicial, quanto dinheiro teria ao fim de x anos com uma taxa de juro t"""
+    """v- valor inicial, t - taxa de juro, a - tempo(anos)"""
+    valorFinal = v*(1+t)**a
+    return print(valorFinal)
+poupança(100, 0.1, 7.27259)
+
+
+
+
