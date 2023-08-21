@@ -73,6 +73,14 @@ def poupança(v, t, a):
     return print(valorFinal)
 poupança(100, 0.1, 7.27259)
 
+def fatorial(n):
+    """Calcula fatorial de n"""
+    if n == 0:
+        return 1
+    else:
+        return n * (n -1)
+fatorial(2)
+
 
 
 
